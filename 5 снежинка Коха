@@ -1,10 +1,9 @@
 import turtle as t
 
+t.tracer(0)
 def koh(n,a):
     if n==0:
-            t.fd(a)
-        
-            
+        t.fd(a)
     else:
         koh(n - 1, a/3)
         t.lt(60)
@@ -13,7 +12,9 @@ def koh(n,a):
         koh(n - 1,a/3)
         t.lt(60)
         koh(n - 1,a/3)
-        
-koh(3,500)
-t.update()
+
+for i in range(3):        
+    koh(3, 100)
+    t.rt(120)
+    t.update()
 
