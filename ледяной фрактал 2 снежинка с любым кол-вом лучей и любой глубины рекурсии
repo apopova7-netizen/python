@@ -1,0 +1,32 @@
+import turtle as t
+
+t.tracer(0)
+t.screensize(2000,2000)
+
+def ice1(n,a):
+    if n == 0:
+        t.fd(a)
+    else:    
+        ice1(n-1,a/2)
+        t.lt(120)
+        ice1(n-1,a/4)
+        t.rt(180)
+        ice1(n-1,a/4)
+        t.lt(120)
+        ice1(n-1,a/4)
+        t.rt(180)
+        ice1(n-1,a/4)
+        t.lt(120)
+        ice1(n-1,a/2)
+        
+        
+def snowflake(point,dept_of_recursion,length):
+    for i in range(point):
+        ice1(dept_of_recursion,length)
+        t.rt(180)
+        ice1(dept_of_recursion,length)
+        t.lt(180 - (360/point))
+        t.update()
+                
+
+snowflake(7, 4, 300)
