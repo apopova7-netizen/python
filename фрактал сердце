@@ -1,0 +1,38 @@
+import turtle as t
+t.tracer(0)
+t.screensize(2000,2000)
+def heart(n,a):
+    if n==0:
+        t.fd(a)
+    else:
+        heart(n-1,a/2)
+        t.lt(135)
+        heart(n-1,a/6)
+        t.rt(90)
+        heart(n-1,a/8)
+        t.rt(90)
+        heart(n-1,a/8)
+        t.lt(90)
+        heart(n-1,a/8)
+        t.rt(90)
+        heart(n-1,a/8)
+        t.rt(90)
+        heart(n-1,a/6)
+        t.lt(135)
+        heart(n-1,a/2)
+
+t.lt(135)
+heart(4,300)
+t.rt(90)
+heart(4,150)
+t.rt(90)
+heart(4,150)
+t.lt(90)
+heart(4,150)
+t.rt(90)
+heart(4,150)
+t.rt(90)
+heart(4,300)
+
+t.update()
+        
