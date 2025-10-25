@@ -11,7 +11,7 @@ def binarytree(n,a):
     t.lt(60)
     binarytree(n-1, a*0.8)
     t.rt(30)
-    t.backward(a)
+    t.bk(a)
 
 binarytree(4,100)
 t.update()
