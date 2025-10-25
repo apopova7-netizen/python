@@ -1,0 +1,27 @@
+import turtle as t
+
+t.tracer(0)
+
+def ice1(n,a):
+    if n == 0:
+        t.fd(a)
+    else:    
+        ice1(n-1,a/2)
+        t.lt(120)
+        ice1(n-1,a/4)
+        t.rt(180)
+        ice1(n-1,a/4)
+        t.lt(120)
+        ice1(n-1,a/4)
+        t.rt(180)
+        ice1(n-1,a/4)
+        t.lt(120)
+        ice1(n-1,a/2)
+
+for i in range(6):
+        ice1(3,150)
+        t.rt(180)
+        ice1(3,150)
+        t.lt(120)
+        t.update()
+
