@@ -1,0 +1,26 @@
+import turtle as t
+
+t.tracer(0)
+t.screensize(2000,2000)
+
+def min(n,a):
+    if n == 0:
+        t.fd(a)
+    else:    
+        min(n-1,a/8)
+        t.lt(90)
+        min(n-1,a/8)
+        t.rt(90)
+        min(n-1,a/8)
+        t.rt(90)
+        min(n-1,a/8)
+        min(n-1,a/8)
+        t.lt(90)
+        min(n-1,a/8)
+        t.lt(90)
+        min(n-1,a/8)
+        t.rt(90)
+        min(n-1,a/8)
+
+min(3, 5000)
+t.update()
