@@ -1,5 +1,7 @@
 import turtle as t
+
 t.tracer(0)
+
 def square(n, a):
     if n==0:
         return
@@ -9,7 +11,6 @@ def square(n, a):
     t.fd(a * 0.1)
     t.rt(8)
     square(n - 1, a * 0.9)
-
 
 square(7, 300)
 t.update()
