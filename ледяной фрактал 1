@@ -1,1 +1,21 @@
+import turtle as t
+
+t.tracer(0)
+t.screensize(2000,2000)
+
+def ice2(n,a):
+    if n==0:
+        t.fd(a)
+    else:
+        ice2(n-1,a/2)
+        t.lt(90)
+        ice2(n-1,a/4)
+        t.lt(180)
+        ice2(n-1,a/4)
+        t.lt(90)
+        ice2(n-1,a/2)
+
+ice2(5,600)
+t.update()
+
 
