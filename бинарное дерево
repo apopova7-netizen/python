@@ -1,9 +1,10 @@
 import turtle as t
+
 t.tracer(0)
+
 def binarytree(n,a):
     if n==0:
         return 
-    
     t.fd(a)
     t.rt(30)
     binarytree(n-1,a*0.8)
@@ -12,6 +13,5 @@ def binarytree(n,a):
     t.rt(30)
     t.backward(a)
 
-    
 binarytree(4,100)
 t.update()
