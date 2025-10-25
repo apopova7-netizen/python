@@ -18,9 +18,9 @@ def ice1(n,a):
         t.lt(120)
         ice1(n-1,a/2)
 
-for i in range(6):
+for i in range(10):
         ice1(3,150)
         t.rt(180)
         ice1(3,150)
-        t.lt(120)
+        t.lt(144)
         t.update()
