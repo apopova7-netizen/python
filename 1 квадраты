@@ -12,5 +12,5 @@ def square(n, a):
     t.rt(8)
     square(n - 1, a * 0.9)
 
-square(15, 300)
+square(25, 300)
 t.update()
